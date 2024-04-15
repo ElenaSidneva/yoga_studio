@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Inter;
+    font-family: "Inter", sans-serif;
 }
 
 :root {
@@ -26,6 +26,13 @@ body {
 }
 .add_text_color {
     color: var(--add-text-color);
+}
+h2 {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 116%; /* 32.48px */
+  letter-spacing: -1.4px;
 }
 
 
@@ -71,6 +78,7 @@ nav {
     font-weight: 400;
     font-size: 16px;
     transition: .4s ease-in-out; 
+    color: var(--main-text-color);
   }
 .navigation_items > a:hover {
     opacity: 0.5;
@@ -116,11 +124,15 @@ nav {
     font-weight: 500;
     text-align: center;
   }
+  section {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
   #agitation {
     width: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
-    border: 1px solid black;
+    
   }
   .slogan {
     font-size: 25px;
@@ -137,9 +149,7 @@ nav {
     left: 50%;
   }
   #about_us {
-    border: 1px solid black;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    
     width: 100%;
   }
   p.first_paragraph {
@@ -151,7 +161,7 @@ nav {
     position: relative;
     left: 25%;
     top: -30px;
-    border: 1px solid black;
+    
   }
   p.first_paragraph::first-letter {
     margin-left: 47%;
@@ -165,7 +175,7 @@ nav {
     position: relative;
     left: 50%;
     top: -20px;
-    border: 1px solid black;
+    
   }
   #about_us > .third_paragraph {
     font-size: 24px;
@@ -188,8 +198,8 @@ nav {
     filter: grayscale(100%);
   }
 
-  #what_you_can_maintain {
-    border: 1px solid black;
+ /* #what_you_can_maintain {
+    
     margin-top: 20px;
     margin-bottom: 20px;
     width: 100%;
@@ -203,12 +213,10 @@ nav {
   .points > div > p {
     text-align: center;
     vertical-align: middle;
-  }
+  }*/
   
 #what_you_can_maintain {
-  border: 1px solid black;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  
   width: 100%;
 }
 .points {
@@ -363,10 +371,9 @@ nav {
 
 
   #prices {
-    border: 1px solid black;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    
     width: 100%;
+    height: 250px;
   }
   
   .tabs {
@@ -383,26 +390,37 @@ nav {
     box-sizing: border-box;
     /* tab content must clear this */
     text-align: left;
+    margin-bottom: 16px;
     background: var(--bg-color-body);
     color: var(--main-text-color);
     font-size: 16px;
     cursor: pointer;
     
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 19.2px */
+    letter-spacing: -0.32px;
   }
   
   .tabby-tab label:hover {
     color: var(--add-text-color);
   }
-  
+  .tabby-tab h2 {
+    margin-bottom: 20px;
+  }
   .tabby-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 400px;
     position: absolute;
-    left: 400px; bottom: 0; right: 0; top: -20px; 
-    padding: 20px;
+    left: 360px; bottom: 0; right: 0; top: -20px; 
+    padding-top: 20px;
     border-radius: 20px;
-    background: var(--bg-color-blocks);
+    
     transition: 
-      opacity 0.8s ease,
-      transform 0.8s ease   ;
+      opacity 0.5s ease,
+      transform 0.5s ease;
     
     /* show/hide */
       opacity: 0;
@@ -428,7 +446,7 @@ nav {
       transform: scale(1);
   }
   
-  /* BREAKPOINTS ----- */
+  /* BREAKPOINTS ----- 
   @media screen and (max-width: 767px) {
     .tabs { min-height: 400px;}
   }
@@ -444,8 +462,77 @@ nav {
       margin-right: 0;
       margin-bottom: 20px;
     }
-  }
+  }*/
   
+  
+.abonement {
+  width: 1125px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: start;
+  gap: 33px;
+  background: var(--bg-color-blocks);
+}
+
+.abonement_info {
+  width: 327px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 10px;
+}
+.abonement_teacher > p {
+  
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 23.4px */
+  letter-spacing: -0.54px;
+}
+.abonement_quantity {
+  width: 151px;
+  height: 38px;
+  padding: 8px 20px;
+  
+  border-radius: 62px;
+  background-color: var(--bg-color-add1);
+}
+.abonement_quantity > p {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 21.6px */
+  letter-spacing: -0.36px;
+}
+.abonement_descrip {
+  width: 370px;
+  margin: 10px;
+}
+.abonement_descrip > p:not(:last-child) {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 19.5px */
+  letter-spacing: -0.15px;
+  margin-bottom: 10px;
+ }
+ .abonement_descrip > button {
+  width: 370px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 22.4px */
+  letter-spacing: -0.32px;
+ }
+ .price > p {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; /* 24.2px */
+    letter-spacing: -0.44px;
+  }
+
+
 
 #FAQ {
   margin: 20px 425px;
@@ -515,6 +602,7 @@ details[open] .faq__summary:after {
 }
 .faq__text {
   margin-right: 150px;
+  margin-bottom: 10px;
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
@@ -522,10 +610,9 @@ details[open] .faq__summary:after {
   letter-spacing: -0.15px;
 }
 
-.hidden-lg { display: block; }
-  
-.visible-lg { display: none; }
-
+footer {
+  margin: 50px 50px;
+}
 
 
 
