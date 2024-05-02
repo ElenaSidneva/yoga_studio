@@ -270,16 +270,38 @@ nav {
   }*/
   
 #what_you_can_maintain {
-  
   width: 100%;
+  position: relative;
+}
+.side_title {
+  position: absolute;
+  width: 410px;
+  height: 156px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.side_title h2 {
+  width: 100%;
+  height: 64px;
+}
+.side_title_desription {
+  width: 330px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 18.2px */
+  letter-spacing: -0.14px;
 }
 .points {
   position: relative;
   width: 100%;
-  height: 300px;
+  height: 350px;
+  border: 1px solid black;
 }
 .points > div {
   position: absolute;
+  
   height: 71px;
   border-radius: 36px;
   border: 1px solid var(--main-text-color);
@@ -293,8 +315,9 @@ nav {
   letter-spacing: -0.6px;
 }
 .point1 {
-  width: 120px;
-  top: 200px;
+  width: 146px;
+  top: 100px;
+  left: 907px;
   background-color: var(--bg-color-add2);
 }
 .point1 img {
@@ -306,38 +329,39 @@ nav {
   transform: rotate(-19.918deg);
   padding: 20px 40px;
   width: 147px;
-  top: 125px;
-  left: 83px;
+  top: 123px;
+  left: 1042px;
 }
 .point3 {
   width: 237px;
+  transform: rotate(-28.304deg);
   background-color: var(--bg-color-add3);
   padding: 20px 40px;
-  top: 200px;
-  left: 121px;
+  top: 247px;
+  left: 354px;
 }
 .point4 {
   width: 123px;
   background-color: var(--bg-color-add1);
   opacity: 0.8;
   transform: rotate(-4.663deg);
-  top: 125px;
-  left: 225px;
+  top: 47px;
+  left: 806px;
 }
 .point5 {
   width: 210px;
   padding: 20px 40px;
-  transform: rotate(19.497deg);
-  top: 179px;
-  left: 337px;
+  transform: rotate(26.635deg);
+  top: 90px;
+  left: 1157px;
 } 
 .point6 {
   width: 80px;
   height: 80px;
   background-color: var(--bg-color-add3);
   transform: rotate(-22.772deg);
-  top: 137px;
-  left: 507px;
+  top: 59px;
+  left: 1042px;
 }
 .point7 {
   width: 204px;
@@ -345,69 +369,69 @@ nav {
   opacity: 0.8;
   padding: 20px 40px;
   transform: rotate(-18.13deg);
-  top: 181px;
-  left: 539px;
+  top: 258px;
+  left: 524px;
 }
 .point8 {
   width: 237px;
   padding: 20px 40px;
   transform: rotate(7.867deg);
-  top: 81px;
-  left: 547px;
+  top: 158px;
+  left: 544px;
 }
 .point9 {
   width: 197px;
   background-color: var(--bg-color-add3);
   transform: rotate(20.036deg);
   padding: 20px 40px;
-  top: 45px;
-  left: 719px;
+  top: 121px;
+  left: 726px;
 }
 .point10 {
   width: 91px;
   background-color: var(--bg-color-add2);
-  top: 128px;
-  left: 775px;
+  top: 205px;
+  left: 770px;
 }
 .point11 {
   width: 187px;
   padding: 20px 40px;
-  top: 200px;
-  left: 728px;
+  top: 278px;
+  left: 713px;
 }
 .point12 {
   width: 206px;
   transform: rotate(-11.05deg);
   padding: 20px 40px;
-  top: 120px;
-  left: 864px;
+  top: 200px;
+  left: 860px;
 }
 .point13 {
-  width: 94px;
+  width: 105px;
   background-color: var(--bg-color-add3);
-  top: 200px;
-  left: 915px;
+  top: 279px;
+  left: 901px;
 }
 .point14 {
   width: 219px;
   padding: 20px 40px;
-  top: 200px;
-  left: 1009px;
+  top: 279px;
+  left: 1007px;
 }
 .point15 {
   width: 220px;
   background-color: var(--bg-color-add2);
-  transform: rotate(-23.682deg);
+  transform: rotate(-17.682deg);
   padding: 20px 40px;
-  top: 98px;
-  left: 1059px;
+  top: 183px;
+  left: 1061px;
 }
 .point16 {
-  width: 100px;
+  width: 111px;
   background-color: var(--bg-color-add1);
   opacity: 0.8;
-  top: 200px;
-  left: 1228px;
+  top: 279px;
+  left: 1226px;
 }
 .point16 img {
   width: 65px;
@@ -417,10 +441,10 @@ nav {
 .point17 {
   width: 208px;
   background-color: var(--bg-color-add3);
-  transform: rotate(47.071deg);
+  transform: rotate(37.071deg);
   padding: 20px 40px;
-  top: 149px;
-  left: 1242px;
+  top: 233px;
+  left: 1257px;
 }
 
 
