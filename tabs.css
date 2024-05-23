@@ -1,0 +1,146 @@
+#prices {
+    width: 100%;
+    height: auto;
+}
+.tabs-controller {
+    min-height: 480px;
+    position: relative;
+    width: 1500px;
+    height: auto;
+    
+}
+.tabs-wrapper {
+    position: relative;
+    display: flex;
+    gap: 100px;
+    width: 335px;
+    height: auto;
+}
+.tabs-buttons {
+    width: 335px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+.tabs-buttons:not(first-child) {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 19.2px */
+    letter-spacing: -0.32px;
+}
+.button {
+    width: 300px;
+    min-width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    
+}
+.button.active {
+    color: var(--add-text-color);
+}
+.tab-contents {
+    position: absolute;
+    left: 375px;
+    width: 1125px;
+    height: auto;
+}
+.content {
+    display: none;
+}
+.content.active {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.abonement {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background-color: var(--bg-color-blocks);
+    border-radius: 20px;
+}
+.group_abonement {
+    display: flex;
+    flex-direction: row;
+    gap: 33px;
+    justify-content: start;
+    position: relative;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: var(--bg-color-blocks);
+}
+.abonement_title {
+    width: 327px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.abonement_classes {
+    width: 151px;
+    padding: 8px 20px;
+    border-radius: 62px;
+    color: var(--add-text-color);
+    background-color: var(--bg-color-add1);
+}  
+.abonement_text {
+    display: none;
+    width: 370px;
+    
+}
+.group_abonement.active .abonement_text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+} 
+.abonement_description {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; 
+}
+.abonement_info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.abonement_info p {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 19.5px */
+    letter-spacing: -0.15px;
+}
+.abonement_price {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; /* 24.2px */
+    letter-spacing: -0.44px;
+}
+#prices .abonement_text button {
+    width: 370px;
+}
+.strelka {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    
+}
+.group_abonement.active .strelka {
+    transform: scaleY(-1);
+    transition: transform 0.5s;
+}
+.thai_massage {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: var(--bg-color-blocks);
+    border-radius: 20px;
+}
