@@ -3,10 +3,10 @@
     height: auto;
 }
 .tabs-controller {
-    min-height: 480px;
+    min-height: 350px;
     position: relative;
     width: 1500px;
-    height: auto;
+    height: 100%;
     
 }
 .tabs-wrapper {

@@ -1,0 +1,29 @@
+.sign_up {
+    padding: 10px 25px;
+    border-radius: 50px;
+    background-color: var(--add-text-color);
+    border: 1px solid var(--add-text-color);
+  }
+  .sign_up > a {
+    text-decoration: none;
+    color: var(--bg-color-blocks);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 22.4px */
+    letter-spacing: -0.32px;
+    text-transform: uppercase;
+  }
+  .sign_up:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+
+  #timetable .timetable_hatha .sign_up {
+    width: 100%;
+    margin-top: 20px;
+  }
+  #agitation .sign_up {
+    width: 370px;
+    margin-left: 755px;
+  }

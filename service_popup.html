@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Service_popup</title>
+</head>
+<body>
+    <div class="service_popup">
+        <div class="close_button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M18.9081 0.292893C19.2987 -0.0976311 19.9318 -0.0976311 20.3224 0.292893C20.7129 0.683418 20.7129 1.31658 20.3224 1.70711L12.0295 10L20.7071 18.6777C21.0977 19.0682 21.0977 19.7014 20.7071 20.0919C20.3166 20.4824 19.6834 20.4824 19.2929 20.0919L10.6152 11.4142L1.93758 20.0919C1.54705 20.4824 0.913886 20.4824 0.523362 20.0919C0.132838 19.7014 0.132838 19.0682 0.523362 18.6777L9.20103 10L0.908138 1.70711C0.517614 1.31658 0.517614 0.683418 0.908138 0.292893C1.29866 -0.0976311 1.93183 -0.0976311 2.32235 0.292893L10.6152 8.58579L18.9081 0.292893Z" fill="#3B0878"/>
+            </svg>
+        </div>
+        <div class="service_popup_choice">
+            <div class="service_choiсe">
+                <p class="popup_title uppercase">Выберите услугу</p>
+                <div class="service_choices">
+                    <div class="hatha_yoga_choice">
+                        <label for="hatha_yoga_choice"><input id="hatha_yoga_choice" type="radio" name="service" checked />Хатха-йога</label>
+                        <label for="instructor_choice">
+                            <select id="instructor_choice" name="instructor_choice">
+                                <option value="">Выбрать инструктора</option>
+                                <option value="1">Любой</option>
+                                <option value="2">Сергей Ильин</option>
+                                <option value="3">Ксения Курочкина</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="thai_massage_choice">
+                        <label for="thai_massage_choice"><input id="thai_massage_choice" type="radio" name="service" /> Тайский массаж</label>
+                        <p>/сеансы проводит Ксения Курочкина/</p>
+                    </div>
+                </div>    
+            </div>
+            
+            <div class="client_info">
+                <h3 class="uppercase">Заполните форму и администратор свяжется с вами</h3>
+                <div class="client_info_form">
+                    <label for="name"><input id="name" name="name" type="text" placeholder="Имя и фамилия" required /></label>
+                    <label for="phone"><input id="phone" name="phone" type="tel" placeholder="+7 000 000 0000" required /></label>
+                    <label for="add_info"><textarea id="add_info" name="add_info" placeholder="По желанию укажите удобные для Вас дату и время занятия/сеанса"></textarea></label>
+                </div>
+                <div class="sign_up_button">
+                    <button class="sign_up"><a href="#">Отправить</a></button>
+                    <p class="confidential_policy">Продолжая, вы соглашаетесь с <a class="confidential_policy_link" href="#">нашей политикой конфединциальности</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="client_order_popup">
+        <div class="close_button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M18.9081 0.292893C19.2987 -0.0976311 19.9318 -0.0976311 20.3224 0.292893C20.7129 0.683418 20.7129 1.31658 20.3224 1.70711L12.0295 10L20.7071 18.6777C21.0977 19.0682 21.0977 19.7014 20.7071 20.0919C20.3166 20.4824 19.6834 20.4824 19.2929 20.0919L10.6152 11.4142L1.93758 20.0919C1.54705 20.4824 0.913886 20.4824 0.523362 20.0919C0.132838 19.7014 0.132838 19.0682 0.523362 18.6777L9.20103 10L0.908138 1.70711C0.517614 1.31658 0.517614 0.683418 0.908138 0.292893C1.29866 -0.0976311 1.93183 -0.0976311 2.32235 0.292893L10.6152 8.58579L18.9081 0.292893Z" fill="#3B0878"/>
+            </svg>
+        </div>
+        <div class="client_order">
+            <div class="order_info">
+                <p class="popup_title uppercase">Ваш заказ</p>
+                <div class="order_details">
+                    <div class="order_text"></div>
+                    <div class="order_price"></div>
+                </div>
+            </div>
+
+            <div class="client_info">
+                <h3 class="uppercase">Заполните форму и администратор свяжется с вами</h3>
+                <div class="client_info_form">
+                    <label for="name"><input id="name" name="name" type="text" placeholder="Имя и фамилия" required /></label>
+                    <label for="phone"><input id="phone" name="phone" type="tel" placeholder="+7 000 000 0000" required /></label>
+                </div>
+                <div class="sign_up_button">
+                    <button class="sign_up"><a href="#">Отправить</a></button>
+                    <p class="confidential_policy">Продолжая, вы соглашаетесь с <a class="confidential_policy_link" href="#">нашей политикой конфединциальности</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="thank_for_order">
+        <div class="close_button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M18.9081 0.292893C19.2987 -0.0976311 19.9318 -0.0976311 20.3224 0.292893C20.7129 0.683418 20.7129 1.31658 20.3224 1.70711L12.0295 10L20.7071 18.6777C21.0977 19.0682 21.0977 19.7014 20.7071 20.0919C20.3166 20.4824 19.6834 20.4824 19.2929 20.0919L10.6152 11.4142L1.93758 20.0919C1.54705 20.4824 0.913886 20.4824 0.523362 20.0919C0.132838 19.7014 0.132838 19.0682 0.523362 18.6777L9.20103 10L0.908138 1.70711C0.517614 1.31658 0.517614 0.683418 0.908138 0.292893C1.29866 -0.0976311 1.93183 -0.0976311 2.32235 0.292893L10.6152 8.58579L18.9081 0.292893Z" fill="#3B0878"/>
+            </svg>
+        </div>
+        <div class="thank_info">
+            <div class="thank_text">
+                <p class="thank_you add_text_color add_font">Спасибо!</p>
+                <h3 class="uppercase">В ближайшее время администратор свяжется с вами</h3>
+            </div>
+            <div class="thank_img">
+                <img src="images/thank_you.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
