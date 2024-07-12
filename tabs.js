@@ -3,6 +3,9 @@ const contents=document.querySelectorAll(".content")
 
 buttons.forEach((button, index) => {
     button.addEventListener('click', () => {
+
+
+
         contents.forEach((content)=>{
             content.classList.remove("active")
         })
