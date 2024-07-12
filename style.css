@@ -19,6 +19,7 @@
     --bg-color-add3: #FFE4D7;
     --main-text-color: #3B0878;
     --add-text-color: #F16E2E;
+    --border: #8970A8;
 }
 body {
     background-color: var(--bg-color-body);
@@ -160,6 +161,9 @@ nav {
     margin-top: 20px;
     margin-bottom: 20px;
   }
+  .parvati {
+    aspect-ratio: 16 /9;
+  }
   .title {
     text-align: center;
   }
@@ -239,8 +243,8 @@ nav {
 
 }
 #what_we_do div:not(.card_title) {
-  outline: 1px solid var(--main-text-color);
-  
+  /*outline: 1px solid var(--main-text-color);*/
+  outline: 1px solid var(--border);
   border-radius: 2%;
   
 }
@@ -503,7 +507,7 @@ nav {
   max-height: 443px;
   display: flex;
   flex-direction: row;
-  border: 1px solid #8970A8;
+  border: 1px solid var(--border);
   border-radius: 40px;
 }
 .teacher.active {
@@ -974,10 +978,10 @@ table tr td:first-child {
 
 .faq {
   cursor: pointer;
-  border-bottom: 1px solid #8970A8;
+  border-bottom: 1px solid var(--border);
 }
 .faq:first-child {
-  border-top: 1px solid #8970A8;
+  border-top: 1px solid var(--border);
 }
 .question {
   display: flex;
