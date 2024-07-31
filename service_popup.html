@@ -8,6 +8,9 @@
     <title>Service_popup</title>
 </head>
 <body>
+    <button>Заказ</button>
+    <div id="grey"></div>
+    <!--
     <div class="service_popup">
         <div class="close_button">
             <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
@@ -50,11 +53,11 @@
             </div>
         </div>
     </div>
-
+    -->
 
 
     <div class="client_order_popup">
-        <div class="close_button">
+        <div class="close_button active">
             <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M18.9081 0.292893C19.2987 -0.0976311 19.9318 -0.0976311 20.3224 0.292893C20.7129 0.683418 20.7129 1.31658 20.3224 1.70711L12.0295 10L20.7071 18.6777C21.0977 19.0682 21.0977 19.7014 20.7071 20.0919C20.3166 20.4824 19.6834 20.4824 19.2929 20.0919L10.6152 11.4142L1.93758 20.0919C1.54705 20.4824 0.913886 20.4824 0.523362 20.0919C0.132838 19.7014 0.132838 19.0682 0.523362 18.6777L9.20103 10L0.908138 1.70711C0.517614 1.31658 0.517614 0.683418 0.908138 0.292893C1.29866 -0.0976311 1.93183 -0.0976311 2.32235 0.292893L10.6152 8.58579L18.9081 0.292893Z" fill="#3B0878"/>
             </svg>
@@ -73,6 +76,7 @@
                 <div class="client_info_form">
                     <label for="name"><input id="name" name="name" type="text" placeholder="Имя и фамилия" required /></label>
                     <label for="phone"><input id="phone" name="phone" type="tel" placeholder="+7 000 000 0000" required /></label>
+                    <label for="add_info"><textarea id="add_info" name="add_info" placeholder="По желанию укажите удобные для Вас дату и время занятия/сеанса"></textarea></label>
                 </div>
                 <div class="sign_up_button">
                     <button class="sign_up"><a href="#">Отправить</a></button>
@@ -98,5 +102,43 @@
             </div>
         </div>
     </div>
+    <script>
+        const clientOrder = document.querySelector(".client_order_popup")
+        const grey = document.querySelector("#grey")
+        const order = document.querySelector("button")
+        const closeBtns = document.querySelectorAll(".close_button")
+
+        //function show(state){
+        //    clientOrder.style.display = state;
+        //    grey.style.display = state;
+        //}
+        
+        order.addEventListener('click', function() {
+            clientOrder.style.display = 'block';
+            grey.style.display = 'block';
+        })
+
+        grey.addEventListener('click', function() {
+            clientOrder.style.display = 'none';
+            grey.style.display = 'none';
+        })
+        
+        closeBtns.forEach((closeBtn, index)=> {
+            closeBtn.addEventListener('click', () => {     
+                closeBtn.classList.add("active")
+                clientOrder.style.display = 'none';
+                grey.style.display = 'none';
+                thankCard.style.display = 'none';
+            })
+        })
+
+        const sendForm = document.querySelector(".sign_up")
+        const thankCard = document.querySelector(".thank_for_order")
+
+        sendForm.addEventListener('click',() => {
+            clientOrder.style.display = 'none';
+            thankCard.style.display = 'block';
+        })
+    </script>
 </body>
 </html>

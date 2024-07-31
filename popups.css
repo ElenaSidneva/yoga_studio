@@ -1,9 +1,25 @@
-
+#grey {
+    background-color: rgba(1, 1, 1, 0.25);
+    position: fixed;
+    left: 0;right: 0;bottom: 0;top: 0;
+    display: none;
+    z-index: 3;
+}
+button {
+    background-color: aqua;
+    color: black;
+    width: 200px;
+}
 .service_popup, .client_order_popup, .thank_for_order {
+    margin: 0 auto;
+    padding: 0 auto;
+    
     position: relative;
     width: 668px;
     border: 1px solid black;
     background-color: white;
+    display: none;
+    z-index: 4;
 }
 .close_button {
     position: absolute;
@@ -174,6 +190,7 @@
 }
 .thank_for_order {
    height: 594px; 
+   display: none;
 }
 .thank_info {
     height: 564px;

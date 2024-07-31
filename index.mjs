@@ -45,6 +45,11 @@ app.get(`/*`, async (req, res) => {
     res.status(200).sendFile(path.join(__dirname, '/index.html'));
 });
 
+app.post(`/telegram`, async (req, res) => {
+    console.log(req.body)
+    res.send({status:true});
+});
+
 app.use(queue.getErrorMiddleware());
 
 app.listen(port, () => {
