@@ -1,3 +1,5 @@
+// Слайдер при наведении в блоке What_we_do
+
 const card=document.querySelector(".card")
 const cardText=document.querySelector(".card_text")
 const sliderContainer=document.querySelector(".slider_container")
@@ -13,7 +15,7 @@ card.addEventListener('mouseout', function() {
 })
 
 
-
+//Чтобы слайдер работал
 
 const slider = document.querySelector(".slider");
 const arrowLeft = document.querySelector(".arrow_left");
@@ -24,7 +26,6 @@ let currentSlideIndex = 0;
 const sliderWidth = slider.clientWidth;
 
 function showSlide() {
-    //slider.style.transform = `translateX(-${currentSlideIndex * sliderWidth}px)`;
     slider.style.transform = `translateX(-${currentSlideIndex * sliderWidth}px)`;
 }
 
@@ -53,32 +54,8 @@ arrowLeft.addEventListener("click", previousSlide);
 arrowRight.addEventListener("click", nextSlide);
 
 
-//const reviewSlider = document.querySelector(".reviews")
-//const reviewArrowLeft = document.querySelector(".review_arrow_left")
-//const reviewArrowRight = document.querySelector(".review_arrow_right")
-//const reviewCards = document.querySelectorAll(".review")
 
-//reviewArrowLeft.addEventListener('click', () => {
-//    reviewCards.style.transform = "translateX(50%)"
-//})
-
-//let currentSlide = 1;
-//
-//reviewArrowLeft.addEventListener("click", () => {
-//  currentSlide -= 1;
-//  updateSlider();
-//});
-//
-//reviewArrowRight.addEventListener("click", () => {
-//  currentSlide += 1;
-//  updateSlider();
-//});
-//
-//function updateSlider() {
-//  reviewCards.forEach((card, index) => {
-//    card.style.transform = `translateX(${(index - currentSlide)}%)`;
-//  });
-//}
+// Слайдер в юлоке Feedback
 
 const reviewSlider = document.querySelector(".review_slider");
 const reviewArrowLeft = document.querySelector(".review_arrow_left");
@@ -99,5 +76,8 @@ reviewArrowRight.addEventListener("click", () => {
 });
 
 function updateSlider() {
-  reviewSlider.style.transform = `translateX(${currentSlide * -slideWidth}px)`;
+    reviewCards.forEach((reviewCard, index) => {
+        reviewCard.style.transform = `translateX(${currentSlide * -slideWidth}px)`;   
+    })
 }
+

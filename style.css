@@ -844,7 +844,7 @@ nav {
 
 #timetable {
   width: 100%;
-  height: 580px;
+  height: 430px;
   display: grid;
   gap: 40px;
   grid-template-columns: 1fr 3fr;
