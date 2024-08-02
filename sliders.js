@@ -23,13 +23,16 @@ const arrowRight = document.querySelector(".arrow_right");
 const slides = document.querySelectorAll(".slider_image");
 
 let currentSlideIndex = 0;
-const sliderWidth = slider.clientWidth;
+let sliderWidth = slider.clientWidth;
 
 function showSlide() {
+    sliderWidth = slider.clientWidth
+    console.log(currentSlideIndex, sliderWidth)
     slider.style.transform = `translateX(-${currentSlideIndex * sliderWidth}px)`;
 }
 
 function changeSlide(slideIndex) {
+    
     currentSlideIndex = slideIndex;
     showSlide();
 }
@@ -43,6 +46,7 @@ function nextSlide() {
 }
 
 function previousSlide() {
+    
     let newSlideIndex = currentSlideIndex - 1;
     if(newSlideIndex < 0) {
         newSlideIndex = slides.length - 1;
@@ -75,9 +79,9 @@ reviewArrowRight.addEventListener("click", () => {
   updateSlider();
 });
 
-function updateSlider() {
-    reviewCards.forEach((reviewCard, index) => {
-        reviewCard.style.transform = `translateX(${currentSlide * -slideWidth}px)`;   
-    })
-}
+let offset = 0;
 
+function updateSlider() {
+    offset += 10;
+    reviewSlider.style.transform = `translateX(${(currentSlide * -slideWidth) - offset}px)`
+}
