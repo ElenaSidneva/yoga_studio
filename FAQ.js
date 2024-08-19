@@ -6,6 +6,16 @@ faqs.forEach((faq)=>{
     })
 })
 
+
+const days=document.querySelectorAll(".days")
+
+days.forEach((day)=>{
+    day.addEventListener("click", () => {
+        console.log("усть контакт")
+        day.classList.toggle("active")
+    })
+})
+
 /*const teachers=document.querySelectorAll(".teacher")
 
 teachers.forEach((teacher)=> {

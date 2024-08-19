@@ -32,5 +32,12 @@
   }
   #agitation .sign_up {
     width: 370px;
-    margin-left: 755px;
+    margin-left: 50%;
+  }
+
+  @media (max-width: 639px){
+    #agitation .sign_up {
+      width: 340px;
+      margin-left: 0;
+    }
   }

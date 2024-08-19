@@ -27,7 +27,6 @@ let sliderWidth = slider.clientWidth;
 
 function showSlide() {
     sliderWidth = slider.clientWidth
-    console.log(currentSlideIndex, sliderWidth)
     slider.style.transform = `translateX(-${currentSlideIndex * sliderWidth}px)`;
 }
 
@@ -56,6 +55,8 @@ function previousSlide() {
 
 arrowLeft.addEventListener("click", previousSlide);
 arrowRight.addEventListener("click", nextSlide);
+
+//
 
 
 
