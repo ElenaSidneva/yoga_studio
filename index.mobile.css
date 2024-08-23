@@ -35,7 +35,7 @@ h5 {
   width: 100%;
   position: sticky;
   top: 0;
-  padding: 20px 50px;
+  padding: 10px 10px;
   z-index: 2;
   background-color: var(--bg-color-body);
   height: 80px;
@@ -53,7 +53,7 @@ nav {
   align-items: center;
 }
 .logo {
-  max-width: 90px;
+  width: 66px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,13 +64,18 @@ nav {
 .logo:hover {
     opacity: 0.5;
 }
+.logo1 {
+  transform: scale(0.8);
+}
 .logo2 {
-  width: 82px;
+  width: 66px;
   height: 24px;
   font-style: oblique;
   transform: scale(1, 2);
 }
-    
+.logo2 h3 {
+  font-size: 17px;
+}  
 .navigation_items > a {
     display: inline;
     margin-left: 40px;
@@ -104,7 +109,7 @@ nav {
   position: fixed;
   left: 0;right: 0;bottom: 0;top: 0;
   display: none;
-  z-index: 3;
+  z-index: 5;
 }
 .client_order_popup, .thank_for_order {
   margin: 0 auto;
@@ -113,17 +118,17 @@ nav {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 668px;
+  width: 370px;
   border: 1px solid transparent;
   background-color: transparent;
   display: none;
-  z-index: 4;
+  z-index: 6;
 }
 .close_button {
   position: absolute;
   top: 0; right: 0;
-  width: 40px; height: 40px;
-  padding: 10px;
+  width: 35px; height: 35px;
+  padding: 7px;
   background-color: var(--bg-color-body);
   border-radius: 20px;
 }
@@ -131,35 +136,39 @@ nav {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  width: 608px;
-  margin: 30px  30px 0 30px;
-  padding: 50px; 
+  width: 335px;
+  margin: 30px 30px 0 5px;
+  padding: 15px; 
   background-color: var(--bg-color-body);
   border: 1px solid var(--main-text-color);
   border-radius: 40px;
 }
 
 .client_info {
+  width: 302px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
 }
 .client_info_form {
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 .sign_up_button {
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 .client_info h3{
-  width: 456px;
-  height: 48px;
+  width: 100%;
 }
 .client_info_form input, .client_info_form textarea{
-  width: 508px;
+  width: 100%;
   padding: 12px 20px;
   border-radius: 20px;
   border: 1px solid var(--main-text-color);
@@ -200,14 +209,15 @@ nav {
   opacity: 0.3;
 }
 .client_info .sign_up_button {
-  width: 508px;
+  width: 100%;
 }
 .confidential_policy{
+  width: 100%;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 130%; /* 18.2px */
-  letter-spacing: -0.14px;
+  letter-spacing: -0.12px;
 }
 .confidential_policy_link {
   text-decoration: none;
@@ -217,10 +227,9 @@ nav {
  height: 594px; 
 }
 .thank_info {
-  height: 564px;
   display: flex;
   flex-direction: column; 
-  gap: 40px;
+  gap: 30px;
 }
 .thank_text {
   display: flex;
@@ -228,10 +237,10 @@ nav {
   gap: 20px;
 }
 .thank_text h3{
-  width: 429px;
+  width: 100%;
 }
 .thank_you {
-  font-size: 56px;
+  font-size: 46px;
   font-style: italic;
   font-weight: 400;
   line-height: 110%; /* 61.6px */
@@ -240,17 +249,28 @@ nav {
 }
 .thank_img {
   width: 100%;
-  height: 316px;
+  height: 200px;
   border-radius: 40px;
   background-color: lightgray;
   overflow: hidden;
 }
 .thank_img img {
   width: 100%;
-  height: 316px;
   object-fit: cover;
   filter: grayscale(100%);
   transform: scaleX(-1);
+}
+.scroll_button {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  border-radius: 39px;
+  padding: 9px 11px;
+  background-color: var(--add-text-color);
+  box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.25);
+  z-index: 4;
 }
 main {
     margin-left: 10px;
@@ -258,13 +278,13 @@ main {
     display: flex;
     flex-direction: column;
     gap: 75px;
-  }
+}
   .side_title {
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 20px;
-  }
+}
   .side_title_description {
     width: 100%;
     font-size: 14px;
@@ -272,7 +292,7 @@ main {
     font-weight: 400;
     line-height: 130%; /* 18.2px */
     letter-spacing: -0.14px;
-  }
+}
 #agitation {
   width: 100%;
   margin-top: 20px;
@@ -280,6 +300,7 @@ main {
 }
 .parvati {
   width: 100%;
+  height: 180px;
 }
 .title {
   text-align: center;
@@ -304,7 +325,7 @@ main {
   gap: 30px;
 }
 .about_us_text {
-    width: 340px;
+  width: 340px;
   margin-top: 0;
   display: flex;
   flex-direction: column;
@@ -869,6 +890,9 @@ main {
   border: 1px solid var(--border);
   border-radius: 40px;
   padding: 10px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 .button.active {
@@ -944,6 +968,9 @@ main {
   width: 340px;
 }
 .desktop {
+  display: none;
+}
+.tablet {
   display: none;
 }
 .mobile {
@@ -1128,6 +1155,9 @@ main {
 }
 
 /*PRICES*/
+#prices .tabs-controller .tabs-wrapper .tabs-buttons .buttons .button {
+  height: 50px;
+}
 .tab-contents {
   width: 340px;
   height: auto;
@@ -1241,20 +1271,21 @@ main {
   gap: 30px;
 }
 .our_articles {
-  width: 2300px;
+  width: 2000px;
   display: flex;
   flex-flow: row nowrap;
   gap: 10px;
+  overflow: scroll;
   scroll-snap-type: x mandatory;
 }
 .our_articles > div {
     scroll-snap-align: center;
     scroll-snap-stop: always;
   }
-/*.our_articles::-webkit-scrollbar {
+.our_articles::-webkit-scrollbar {
   width: 0;
   height: 0;
-}*/
+}
 .article {
   width: 320px;
   height: 319px;
@@ -1309,7 +1340,9 @@ main {
 .our_articles .article:nth-child(8) a img {
   object-position: 10% 10%;
 }
-
+.articles_link {
+  display: none;
+}
 
 /*FAQ*/
 #FAQ {
@@ -1317,7 +1350,6 @@ main {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  
   margin-bottom: 100px;
 }
 

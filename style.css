@@ -45,16 +45,5 @@ a {
   color: var(--main-text-color);
 }
 
-.scroll_button {
-  width: 78px;
-  height: 78px;
-  position: fixed;
-  right: 50px;
-  bottom: 55px;
-  border-radius: 39px;
-  padding: 23px 25px;
-  background-color: var(--add-text-color);
-  box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.25);
-  z-index: 3;
-} 
+ 
 

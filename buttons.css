@@ -41,3 +41,15 @@
       margin-left: 0;
     }
   }
+  @media (min-width: 640px) and (max-width: 1199px) {
+    #agitation .sign_up {
+      width: 300px;
+      margin-left: 50%;
+    }
+    .teacher_info .sign_up {
+      width: 332px;
+    }
+    .timetable .sign_up {
+      width: 100%;
+    }
+  }
