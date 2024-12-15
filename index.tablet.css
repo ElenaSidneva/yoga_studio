@@ -5,7 +5,7 @@
     font-style: normal;
     font-weight: 500;
     line-height: 116%; /* 32.48px */
-    letter-spacing: -1.1px;
+    letter-spacing: -1px;
     text-transform: uppercase;
   }
   h3 {
@@ -13,14 +13,14 @@
     font-style: normal;
     font-weight: 500;
     line-height: 120%; /* 24px */
-    letter-spacing: -0.54px;
+    letter-spacing: -1px;
   }
   h4 {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 130%; /* 23.4px */
-    letter-spacing: -0.48px;
+    letter-spacing: -1px;
     text-transform: uppercase;
   }
   
@@ -90,7 +90,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 130%; /* 18.2px */
-    letter-spacing: -0.14px;
+    letter-spacing: -0;
     text-transform: uppercase;
   }
   .phone:hover {
@@ -208,7 +208,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 130%; /* 18.2px */
-    letter-spacing: -0.14px;
+    letter-spacing: -0;
   }
   .confidential_policy_link {
     text-decoration: none;
@@ -236,7 +236,7 @@
     font-style: italic;
     font-weight: 400;
     line-height: 110%; /* 61.6px */
-    letter-spacing: -1.68px;
+    letter-spacing: -2px;
     text-transform: lowercase;
   }
   .thank_img {
@@ -249,7 +249,8 @@
   .thank_img img {
     width: 100%;
     height: 316px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     filter: grayscale(100%);
     transform: scaleX(-1);
   }
@@ -285,7 +286,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 130%; /* 18.2px */
-    letter-spacing: -0.15px;
+    letter-spacing: -0;
   }
   
     /*Agitation*/
@@ -307,7 +308,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 110%; /* 27.5px */
-    letter-spacing: -0.2px;
+    letter-spacing: -0;
     max-width: 256px;
     max-height: 66px;
     margin-left: 50%;
@@ -337,7 +338,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 110%; 
-    letter-spacing: -0.2px;
+    letter-spacing: -0;
   }
   .second_paragraph {
     width: 300px;
@@ -347,7 +348,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 130%; /* 19.5px */
-    letter-spacing: -0.14px;
+    letter-spacing: -0;
   }
   .third_paragraph {
     width: 600px;
@@ -356,7 +357,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 130%; /* 31.2px */
-    letter-spacing: -0.38px;
+    letter-spacing: -0;
   }
   .about_us_img {
     width: 100%;
@@ -366,7 +367,8 @@
     width: 100%;
     height: 200px;
     filter: grayscale(100%);
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     border-radius: 184px;
   }
     
@@ -421,7 +423,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 130%; /* 19.5px */
-    letter-spacing: -0.14px;
+    letter-spacing: -0;
   }
   .symbol_card {
     display: none;
@@ -456,7 +458,8 @@
     height: 100%;
     flex-shrink: 0;
     background-color: antiquewhite;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     border-radius: 8px;
     filter: grayscale(100%);
   }
@@ -510,7 +513,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 130%; /* 31.2px */
-    letter-spacing: -0.38px;
+    letter-spacing: -0;
   }
   .points > div:has(:not(img)) {
     height: 49px;
@@ -701,9 +704,6 @@
     grid-template-columns: 155px auto 33px;
     grid-template-rows: 67px 56px;
   }
-  /*.teacher.active  .teacher_brief_info{
-    min-width: 370px;
-  }*/
   
   .teacher_brief_info svg {
     grid-column-start: 3;
@@ -752,7 +752,8 @@
     height: 130px;
     border-radius: 200px;
     overflow: hidden;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     filter: grayscale(100%);
   }
   .teacher_name {
@@ -767,7 +768,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 130%; 
-    letter-spacing: -0.12px;
+    letter-spacing: -0;
     max-width: 255px;
   }
   .teacher_practice {
@@ -777,7 +778,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 130%; 
-    letter-spacing: -0.14px;
+    letter-spacing: -0;
     width: 181px;
   }
   .teacher_info_text {
@@ -789,7 +790,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 130%; /* 19.5px */
-    letter-spacing: -0.14px;
+    letter-spacing: -0;
   }
   
   /*Feedback*/
@@ -866,10 +867,12 @@
     width: 90px;
     height: 90px;
     filter: grayscale(100%);
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .review:first-child .review_photo img {
-    object-position: 5px 10px;
+    -o-object-position: 5px 10px;
+       object-position: 5px 10px;
     transform: scale(2);
   }
   .review_info {
@@ -881,7 +884,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 130%; /* 19.5px */
-    letter-spacing: -0.14px;
+    letter-spacing: -0;
     position: relative;
   }
   .review_author {
@@ -942,7 +945,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 120%; 
-    letter-spacing: -0.32px;
+    letter-spacing: -0;
     cursor: pointer;
     border: 1px solid var(--border);
     border-radius: 40px;
@@ -976,7 +979,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 110%; 
-    letter-spacing: -0.2px;
+    letter-spacing: -0;
   }
   .service_info {
     width: 300px;
@@ -987,7 +990,8 @@
   .service_img {
     width: 280px;
     height: 280px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     border-radius: 40px;
     filter: grayscale(100%);
   }
@@ -998,7 +1002,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 130%;
-    letter-spacing: -0.14px;
+    letter-spacing: -0;
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -1061,7 +1065,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 120%; 
-    letter-spacing: -0.36px;
+    letter-spacing: -0;
     background-color: var(--bg-color-blocks);
     border-radius: 8px;
   }
@@ -1083,7 +1087,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 130%; 
-    letter-spacing: -0.48px;
+    letter-spacing: -1px;
     text-transform: uppercase;
     background-color: var(--bg-color-blocks);
     border-radius: 8px;
@@ -1112,7 +1116,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 120%; 
-    letter-spacing: -0.36px;
+    letter-spacing: -0;
   }
 
   
@@ -1133,7 +1137,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 130%; /* 18.2px */
-    letter-spacing: -0.15px;
+    letter-spacing: -0;
   }
   .special_offer {
     width: 100%;
@@ -1149,9 +1153,11 @@
   .special_offer_img .tablet  {
     width: 100%;
     height: 425px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     transform: scale(1.1);
-    object-position: 78% 20px;
+    -o-object-position: 78% 20px;
+       object-position: 78% 20px;
   }
   .invite_friend1, .invite_friend2 {
     display: none;
@@ -1187,7 +1193,7 @@
     font-style: italic;
     font-weight: 400;
     line-height: 110%; 
-    letter-spacing: -1.32px;
+    letter-spacing: -1px;
     text-transform: lowercase;
     margin-top: -20px;
   }
@@ -1196,7 +1202,7 @@
     font-style: normal;
     font-weight: 500;
     line-height: 130%; /* 52px */
-    letter-spacing: -0.96px;
+    letter-spacing: -1px;
   }
   .info2 {
     width: 100%;
@@ -1214,7 +1220,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 130%; /* 19.5px */
-    letter-spacing: -0.14px;
+    letter-spacing: -0;
     margin-top: 33px;
   }
   .info2 .part2 {
@@ -1223,7 +1229,7 @@
     font-style: italic;
     font-weight: 400;
     line-height: 110%; /* 61.6px */
-    letter-spacing: -1.32px;
+    letter-spacing: -1px;
     text-transform: lowercase;
   }
   /*PRICES*/
@@ -1303,14 +1309,14 @@
     font-style: normal;
     font-weight: 400;
     line-height: 130%;
-    letter-spacing: -0.14px;
+    letter-spacing: -0;
   }
   .abonement_price {
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
     line-height: 110%; 
-    letter-spacing: -0.36px;
+    letter-spacing: -0;
   }
   
   .strelka {
@@ -1329,6 +1335,7 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
+    overflow-x: scroll;
   }
   .our_articles {
     width: 1300px;
@@ -1361,7 +1368,8 @@
   .article_img img {
     width: 100%;
     height: 188px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     filter: grayscale(100%);
   }
   .article a {
@@ -1380,7 +1388,8 @@
     display: none;
   }
   .article:nth-child(8) a img {
-    object-position: 10% 10%;
+    -o-object-position: 10% 10%;
+       object-position: 10% 10%;
   }
   .articles_link {
     text-transform: uppercase;
@@ -1389,7 +1398,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 120%; 
-    letter-spacing: -0.28px;
+    letter-spacing: -0;
     text-transform: uppercase;
   }
   
@@ -1428,7 +1437,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 130%; 
-    letter-spacing: -0.14px;
+    letter-spacing: -0;
   }
   .faq.active .answer {
     height: auto;
@@ -1483,7 +1492,7 @@
     font-style: normal;
     font-weight: 500;
     line-height: 130%;
-    letter-spacing: -0.96px;
+    letter-spacing: -1px;
     text-transform: uppercase;
   } 
   
@@ -1492,7 +1501,7 @@
     font-style: italic;
     font-weight: 400;
     line-height: 110%; 
-    letter-spacing: -1.32px;
+    letter-spacing: -1px;
     text-transform: lowercase;
   }
   @keyframes marquee {
@@ -1559,7 +1568,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 130%; 
-    letter-spacing: -0.14px;
+    letter-spacing: -0;
     opacity: 70%;
   }
   .contacts_links {
@@ -1570,7 +1579,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 130%; 
-    letter-spacing: -0.14px;
+    letter-spacing: -0;
     opacity: 70%;
   }
   .social_media {
