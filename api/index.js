@@ -13,7 +13,8 @@ export default async (feedbackForm) => {
 }
 
 export const feedbackForm = async (feedbackForm) => {
-          
+    console.log("получил", feedbackForm);   
+      
     let response = await fetch('/telegram', {
       method: 'POST',
       headers: {

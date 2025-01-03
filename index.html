@@ -1305,10 +1305,34 @@
 
     <script type="module">
       import {feedbackForm} from './api/index.js' 
-      feedbackForm({
-          name: 'John',
-          surname: 'Smith'
-        })  
+
+      let messageAdmin = {};
+    
+
+      const name = document.body.querySelector("#name");
+      const phone = document.body.querySelector("#phone");
+      const add_info = document.body.querySelector("#add_info");
+      const send_form = document.body.querySelectorAll(".send_form")
+
+      name.addEventListener("input", (event) => {
+        messageAdmin.name = event.currentTarget.value;
+        console.log("работает name", messageAdmin)
+      })
+      phone.addEventListener("input", (event) => {
+        messageAdmin.phone = event.currentTarget.value;
+        console.log("работает phone", messageAdmin)
+      })
+      add_info.addEventListener("input", (event) => {
+        messageAdmin.add_info = event.currentTarget.value;
+        console.log("работает add_info", messageAdmin)
+      })
+
+      send_form.forEach((item)=> {
+        item.addEventListener("click", () => {
+          feedbackForm(messageAdmin); 
+        })
+      }) 
+ 
     </script>
 </body>
 </html>
