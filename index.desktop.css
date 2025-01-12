@@ -1431,12 +1431,12 @@
   
   /*Certificates*/
 
-  .our_certificates {
+  #our_certificates {
     width: 1500px;
     display: flex;
     gap: 20px;
   }
-  .our_certificates .side_title {
+  #our_certificates .side_title {
     min-width: 355px;
   }
   .certificates {
@@ -1488,6 +1488,8 @@
     padding-right: 23px;
     padding-bottom: 20px;
   }
+
+  
   /*ARTICLES*/
   #articles {
     width: 1500px;

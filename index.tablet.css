@@ -1329,6 +1329,11 @@
     transform: scaleY(-1);
     transition: transform 0.5s;
   }
+
+#our_certificates {
+  display: none;
+}
+
   /*ARTICLES*/
   #articles {
     width: 600px;
