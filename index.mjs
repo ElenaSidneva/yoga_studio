@@ -7,7 +7,7 @@ import * as dotenv from 'dotenv';
 import express from 'express';
 import TelegramBot from 'node-telegram-bot-api';
 
-const token = '7287238199:AAGnntdlS8BlHnFYO5IDK1ZZ1dw7cfiE-Ys';
+// const token = 'вставить айпи тоукена';
 const bot = new TelegramBot(token, {polling: true});
 console.log("good", bot)
 
